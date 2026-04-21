@@ -1,0 +1,10 @@
+title: Metal Info
+description: Get started with Metal.
+baseurl: ""
+url: "https://babywords.github.io/Metal/"
+
+# 开启 Jekyll 主题
+theme: minima
+
+# 让 index.md 自动渲染
+markdown: kramdown

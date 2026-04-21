@@ -11,6 +11,55 @@ title: 首页
 
 ---
 
+<style>
+/* 电脑端显示悬浮侧边栏 */
+@media (min-width: 1200px) {
+  .markdown-body {
+    max-width: 900px !important;
+    margin-left: 300px !important; /* 给左侧留出空间 */
+  }
+  #toc-sidebar {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+    width: 260px;
+    height: 90vh;
+    overflow-y: auto;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    font-size: 14px;
+    z-index: 999;
+  }
+  #toc-sidebar h3 { margin-top: 0; font-size: 16px; }
+  #toc-sidebar ul { list-style-type: none; padding-left: 15px; line-height: 1.6; }
+  #toc-sidebar > ul { padding-left: 0; }
+  #toc-sidebar a { text-decoration: none; color: #0366d6; display: block; padding: 2px 0;}
+  #toc-sidebar a:hover { color: #005cc5; font-weight: bold; }
+}
+/* 手机端退化为普通区块，不悬浮 */
+@media (max-width: 1199px) {
+  #toc-sidebar {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+}
+</style>
+
+<div id="toc-sidebar" markdown="1">
+
+### 📑 知识手册导航
+
+* TOC
+{:toc}
+
+</div>
+
+---
+
 ## 📖 第一章：底层逻辑——你卖的到底是什么？
 
 ### 1.1 钢（Steel）与碳钢（Carbon Steel）

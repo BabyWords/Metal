@@ -2,6 +2,17 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 15rem;
+    min-width: 15rem;
+  }
+
+  .main {
+    margin-left: 15rem;
+  }
+}
+
 .main-content-wrap {
   background: #ffffff;
   border: 1px solid #d8e0e8;

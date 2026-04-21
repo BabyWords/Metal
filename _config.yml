@@ -1,10 +1,31 @@
-title: Metal Info
-description: Get started with Metal.
-baseurl: ""
-url: "https://babywords.github.io/Metal/"
+title: Stainless Steel Playbook
+description: 不锈钢外贸知识库
+baseurl: "/Metal"
+url: "https://babywords.github.io"
 
-# 开启 Jekyll 主题
-theme: minima
-
-# 让 index.md 自动渲染
 markdown: kramdown
+remote_theme: just-the-docs/just-the-docs
+color_scheme: custom
+
+plugins:
+  - jekyll-remote-theme
+
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "GitHub Repository":
+    - "https://github.com/babywords/Metal"
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: yellow
+
+nav_sort: case_insensitive
+footer_content: "Stainless Steel Playbook | Built for practical B2B learning"
